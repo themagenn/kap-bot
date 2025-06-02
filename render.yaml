@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: kap-telegram-bot
+    env: python
+    buildCommand: ""
+    startCommand: python kap_bot.py
+    autoDeploy: true
