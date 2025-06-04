@@ -6,10 +6,10 @@ import time
 TOKEN = "7489749933:AAGgqTUputbXblmaDE2Mk-aR3GCEF0BwpYs"
 
 # 🔧 Список магазинов — просто юзернеймы
-USERS = ["@NebulaHerbs", "@vnasyvn1", "@Jokerenq", "@ProfessorElina", "@Bambinopapi2", "@puff_yvn13", "@GLOBALyvn", "@qosevkatun"]
+USERS = ["@NebulaHerbs", "@vnasyvn1", "@HayBro420", "@ProfessorElina", "@Bambinopapi2", "@puff_yvn13", "@GLOBALyvn", "@qosevkatun"]
 
 # Время (в секундах), пока считается "онлайн"
-ACTIVE_TIME = 600
+ACTIVE_TIME = 3600
 
 # Словарь последней активности
 last_active = {}
@@ -51,7 +51,7 @@ if __name__ == "__main__":
     import asyncio
     app = ApplicationBuilder().token(TOKEN).build()
 
-    app.add_handler(MessageHandler(filters.TEXT & (~filters.COMMAND), record_activity))
+    app.add_handler(MessageHandler(~filters.COMMAND, record_activity))
     app.add_handler(CommandHandler("kap", kap))
 
     print("Բոտը աշխատում է...")
