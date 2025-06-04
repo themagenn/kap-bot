@@ -46,13 +46,12 @@ async def kap(update: Update, context: ContextTypes.DEFAULT_TYPE):
         text=message
     )
 
-# Запуск
+# Запуск бота
 if __name__ == "__main__":
-    import asyncio
     app = ApplicationBuilder().token(TOKEN).build()
 
     app.add_handler(MessageHandler(~filters.COMMAND, record_activity))
     app.add_handler(CommandHandler("kap", kap))
 
     print("Բոտը աշխատում է...")
-    asyncio.run(app.run_polling())
+    app.run_polling()
