@@ -1,12 +1,13 @@
+
 from telegram import Update
 from telegram.ext import ApplicationBuilder, CommandHandler, MessageHandler, filters, ContextTypes
 import time
 
 # 🔧 Твой токен бота
-TOKEN = "7489749933:AAGgqTUputbXblmaDE2Mk-aR3GCEF0BwpYs"
+TOKEN = "7413807566:AAGVFsI3acxE1LJig9nQFcHQdGMdx-3or1c"
 
 # 🔧 Список магазинов — просто юзернеймы
-USERS = ["@NebulaHerbs", "@vnasyvn1", "@HayBro420", "@ProfessorElina", "@Bambinopapi2", "@puff_yvn13", "@GLOBALyvn", "@qosevkatun"]
+USERS = ["@NebulaHerbs", "@vnasyvn1", "@HayBro420", "@ProfessorElina", "@Bambinopapi2", "@puff_yvn13", "@GLOBALyvn", "@criminalape", "@toopac420","@taffo"]
 
 # Время (в секундах), пока считается "онлайн"
 ACTIVE_TIME = 3600
