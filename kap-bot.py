@@ -7,7 +7,7 @@ import time
 TOKEN = "7413807566:AAGVFsI3acxE1LJig9nQFcHQdGMdx-3or1c"
 
 # 🔧 Список магазинов — просто юзернеймы
-USERS = ["@NebulaHerbs", "@vnasyvn1", "@HayBro420", "@OperatorElina", "@Bambinopapi2", "@puff_yvn13", "@GLOBALyvn", "@criminalapee", "@toopac420", "@lagood", "@Big_Bong_Shop","@yandex_420","@Glovo_420"]
+USERS = ["@NebulaHerbs", "@vnasyvn1", "@HayBro420", "@OperatorElina", "@Bambinopapi2", "@GLOBALyvn", "@criminalapee", "@toopac420", "@lagood", "@Big_Bong_Shop","@yandex_420","@Glovo_420"]
 
 # Время (в секундах), пока считается "онлайн"
 ACTIVE_TIME = 3600
